@@ -36,7 +36,7 @@ header h1{
     font-weight: bold;
     font-size: 36px;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -63,8 +63,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--tertiary-color);
-    color:var(--primary-color);
+    background: rgba(0, 0, 0, 0.5);
+    color:var(--secondary-color);
     border-radius: 15px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -121,9 +121,17 @@ section {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.hero-cta li {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    margin-top: 25px;
+}
+
 .hero-video {
     padding: 36px;
-    color: --primary-color;
     width: 40%;
     margin: 3.5%;
     position: relative;
@@ -169,5 +177,5 @@ h3 p {
 }
 
 #Contact ul li {
-    text-decoration: none;
+    list-style: none;
 }
