@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #DF3062;
+    --secondary-color: #11ABC1;
+    --tertiary-color: #F5B935;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +12,31 @@
 
 header {
     padding: 20px 35px;
-    background-image: url(../images/portfolio-header.jpg);
 }
 
 header h1{
-    color: #EEEEEE;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
     text-align: center;
 }
 
+li a {
+    display: block;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url(../images/portfolio-header.jpg);
+}
+
 body {
-    background-color: #EFEEE7
+    background-color: var(--secondary-color);
 }
 
 #main-bio {
