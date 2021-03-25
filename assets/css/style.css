@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #DF3062;
-    --secondary-color: #D8E2DF;
-    --tertiary-color: #F5B935;
+    --primary-color: #2b6777;
+    --secondary-color:  #c8d8e4;
+    --tertiary-color: #52ab98;
 }
 
 * {
@@ -25,7 +25,6 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../images/portfolio-header.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -95,7 +94,7 @@ section {
 /* HERO STYLE START */
 
 .hero {
-    background-image: url(../images/portfolio-header.jpg);
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -131,6 +130,14 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     position: relative;
+}
+
+/* HERO STYLE END */
+
+p {
+    color: var(--tertiary-color);
+    font-size: 18px; 
+    line-height: 1.5;
 }
 
 
