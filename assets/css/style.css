@@ -1,6 +1,6 @@
 :root {
     --primary-color: #DF3062;
-    --secondary-color: #11ABC1;
+    --secondary-color: #D8E2DF;
     --tertiary-color: #F5B935;
 }
 
@@ -10,33 +10,68 @@
     box-sizing: border-box;
 }
 
+body {
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, san-serif;
+}
+
 header {
+    z-index: 9999;
     padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/portfolio-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1{
     color: var(--secondary-color);
-    text-align: center;
     font-weight: bold;
-    text-align: left;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
-ul {
-    list-style: none;
-    text-align: center;
-}
-
-li a {
-    display: block;
+header a {
     text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--tertiary-color);
+    color:var(--primary-color);
+    border-radius: 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero {
     background-image: url(../images/portfolio-header.jpg);
-}
-
-body {
-    background-color: var(--secondary-color);
 }
 
 #main-bio {
