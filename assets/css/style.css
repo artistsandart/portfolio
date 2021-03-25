@@ -134,29 +134,38 @@ section {
 
 /* HERO STYLE END */
 
-p {
-    color: var(--tertiary-color);
-    font-size: 18px; 
-    line-height: 1.5;
+img {
+    width: 30%;
+    height: auto;
 }
 
 
-#main-bio {
-    margin-top: 30px;
-    width: 70%;
-    display: block;
+.section-title {
+    margin: 20px;
+    background: --primary-color;
+    color: var (--tertiary-color);
+    align: left;
 }
 
-p{
-    align: right;
-}
+h3 p {
+        position: relative;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        height: 100px;
+        display: right;
+    }
 
 #contact-info {
-    width: 30%;
+    flex: 1;
+    margin: 15px;
 }
 
-#bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+#contact-info h2 {
+    flex: 1;
+    margin: 15px;
+}
+
+#contact-info li{
+    text-decoration: none;
 }
