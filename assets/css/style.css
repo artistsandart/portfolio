@@ -178,4 +178,9 @@ h3 p {
 
 #Contact ul li {
     list-style: none;
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
 }
